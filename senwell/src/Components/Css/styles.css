@@ -1,0 +1,135 @@
+
+.container{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-left: 10%;
+    margin-right:10%; */
+    /* padding-top: 2%;
+    padding-bottom:2%; */
+    background-color: #eaeaea;
+}
+.card{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+}
+.cardContent{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction:row;
+    /* padding:5px; */
+}
+.cardDetails{
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start !important;
+    text-align: left;
+}
+.cardDetails > .heading,.money, .date{
+    /* border:1px solid goldenrod; */
+    text-align:left;
+    margin-bottom: 10px;
+}
+.playBtn{
+    align-self: center;
+    width:250px;
+    border-radius: 15px;
+    height:35px;
+    font-size:15px;
+    border:none;
+    text-transform:uppercase;
+    background-color: #39ac73;
+}
+.heading{
+    font-size: 12px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.imgBox{
+    display: flex;
+    align-items: center;
+    padding:2px;
+    margin-right: 10px;
+}
+.date{
+    font-size:12px;
+    font-weight: 500;
+}
+
+/* @media(max-width:360px){
+    .container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .card{
+        margin-top:20px;
+        
+    }
+    .card > div {
+        
+        justify-content:center;
+    }
+} */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .card{
+        margin-top:20px;
+        /* border:2px solid red; */
+    }
+    .card > div {
+        /* border:1px solid green; */
+        justify-content:center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .card{
+        margin-top:20px;
+        /* border:2px solid red; */
+    }
+    .card > div {
+        /* border:1px solid green; */
+        justify-content:center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container{
+        /* border: 1px solid blue; */
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* margin-left: 10%;
+        margin-right:10%; */
+        padding-top: 2%;
+        padding-bottom:2%;
+        background-color: #eaeaea;
+    }
+    .cardContent{
+        padding:5px;
+    }
+}

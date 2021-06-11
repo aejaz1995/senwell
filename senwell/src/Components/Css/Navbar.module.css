@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+.logo{
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color:#ffffff;
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+    padding:10px;
+}
+
+.navbar > div span{
+    margin:15px;
+}
+.navbar > .links{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /* margin-left:10%; */
+}
+
+.loginAndLang{
+    /* border:1px solid black; */
+    /* margin-right:15%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:10px;
+}
+
+.loginBtn{
+    background-color:  #9999ff;
+    text-transform: uppercase;
+    border:none;
+    border-radius: 5px;
+    padding:5px;
+    width:60px;
+    height:40px;
+}
+.select{
+    border-radius: 5px;
+    padding:5px;
+    width:60px;
+    height:40px;    
+}
+
+@media (max-width: 360px) {
+  
+    .navbar > .links{
+        margin-left:0px;
+    }
+    .navbar > .links>.navigation{
+        display:none;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar > .links{
+        margin-left:0px;
+    }
+    .loginAndLang{
+        margin-right:0px;
+    }
+    .navbar > .links>.navigation{
+        display:none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar > .links{
+        margin-left:10%;
+    }
+    .loginAndLang{
+        margin-right:15%;
+    }
+}
